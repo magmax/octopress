@@ -1,0 +1,13 @@
+/* TEAM */
+
+Author: Miguel Ángel García
+Site: miguelangel.garcia@gmail.com
+Twitter: @magmax9
+Location: Spain
+
+/* THANKS */
+Name: Crysol
+
+/* SITE */
+Components: jQuery.
+Software: Jekyll, Sass
