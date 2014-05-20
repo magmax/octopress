@@ -2,11 +2,12 @@
 {% if site.disqus_short_name and page.comments != false %}
 <script type="text/javascript">
       var disqus_shortname = '{{ site.disqus_short_name }}';
+      var disqus_identifier = {% if page.identifier.blank? %} '{{ site.url }}{{ page.url }}' {% else %} '{{ page.identifier }}' {% endif %};
 
       {% if page.comments == true %}
         {% comment %} `page.comments` can be only be set to true on pages/posts, so we embed the comments here. {% endcomment %}
         // var disqus_developer = 1;
-        var disqus_identifier = {% if identifier %} '{{ identifier }}' {% else %} '{{ site.url }}{{ page.url }}' {% endif %};
+
         var disqus_url = '{{ site.url }}{{ page.url }}';
         var disqus_script = 'embed.js';
       {% else %}
@@ -14,9 +15,12 @@
         var disqus_script = 'count.js';
       {% endif %}
     (function () {
-      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      var dsq = document.createElement('script');
+      dsq.type = 'text/javascript';
+      dsq.async = true;
       dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
       (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     }());
 </script>
 {% endif %}
+
