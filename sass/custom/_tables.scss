@@ -1,0 +1,19 @@
+table {
+  width: 98%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+thead {
+  background: $base03;
+  color: $base3;
+}
+
+tr:nth-child(even) {
+  background: $base2;
+}
+
+td {
+  margin: 0, 5px;
+}
+
