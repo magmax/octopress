@@ -1,22 +1,27 @@
 ---
 layout: default
+sidebar: false
+title: MagMax's Projects
+description: List and status of MagMax's principal projects
+lang: en
 ---
 
-No están todos los que son, pero son todos los que están.
+This table gives some organization to me and allows you to be tunned.
+
+
+My principal projects:
 
 ==================  ==================  ==================  ==================  ==========================
 **Descargas**       **Tests**           **Cobertura**       **Versión**         **Proyecto**
 ==================  ==================  ==================  ==================  ==========================
-|d readchar|        |t readchar|        |c readchar|        |v readchar|        **python-readchar:**     Lectura de pulsaciones de teclas
-|d inquirer|        |t inquirer|        |c inquirer|        |v inquirer|        **python-inquirer:**     Interfaces de línea de órdenes
-|d releaseme|       |t releaseme|       |c releaseme|       |v releaseme|       **python-releaseme:**    Versionado de proyectos
-|d pluginloader|    |t pluginloader|    |c pluginloader|    |v pluginloader|    **python-pluginloader**: Gestionar plugins
-|d pybrowsertest|   |t pybrowsertest|   |c pybrowsertest|   |v pybrowsertest|   **pybrowsertest**:       Wrapper de selenium/webdriver
+|d readchar|        |t readchar|        |c readchar|        |v readchar|        **python-readchar:**     Key press read library
+|d inquirer|        |t inquirer|        |c inquirer|        |v inquirer|        **python-inquirer:**     Command line interfaces
+|d releaseme|       |t releaseme|       |c releaseme|       |v releaseme|       **python-releaseme:**    Project versioning
+|d pluginloader|    |t pluginloader|    |c pluginloader|    |v pluginloader|    **python-pluginloader**: Plugin management
+|d pybrowsertest|   |t pybrowsertest|   |c pybrowsertest|   |v pybrowsertest|   **pybrowsertest**:       Selenium/Webdriver wrapper
+|d colorize|        |t colorize|        |c colorize|        |v colorize|        **colorize**:            Color for any command output
 ==================  ==================  ==================  ==================  ==========================
 
-..
-
-Esta tabla me permite a mí organizarme y a vosotros estar al tanto de mis últimos inventos XD
 
 
 .. python-readchar
@@ -135,3 +140,27 @@ Esta tabla me permite a mí organizarme y a vosotros estar al tanto de mis últi
 .. _tl pybrowsertest: https://travis-ci.org/magmax/pybrowsertest
 .. _cl pybrowsertest: https://coveralls.io/r/magmax/pybrowsertest
 .. _l pybrowsertest: https://pypi.python.org/pypi/pybrowsertest
+
+
+
+.. colorize
+
+.. |t colorize| image:: https://travis-ci.org/magmax/colorize.png
+  :target: `tl colorize`_
+  :alt: Travis results
+
+.. |c colorize| image:: https://coveralls.io/repos/magmax/colorize/badge.png
+  :target: `cl colorize`_
+  :alt: Coveralls results for colorize_
+
+.. |v colorize| image:: https://pypip.in/v/colorize/badge.png
+    :target: `l colorize`_
+    :alt: Latest PyPI version for colorize
+
+.. |d colorize| image:: https://pypip.in/d/colorize/badge.png
+    :target: `l colorize`_
+    :alt: Number of PyPI downloads for colorize
+
+.. _tl colorize: https://travis-ci.org/magmax/colorize
+.. _cl colorize: https://coveralls.io/r/magmax/colorize
+.. _l colorize: https://pypi.python.org/pypi/colorize
