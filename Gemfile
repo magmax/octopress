@@ -17,6 +17,8 @@ group :development do
   gem 'liquid', '~> 2.3.0'
   gem 'directory_watcher', '1.4.1'
   gem 'RbST', '0.3.0'
+  gem 'kramdown'
+  gem 'coderay'
 end
 
 gem 'sinatra', '~> 1.4.2'
