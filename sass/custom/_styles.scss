@@ -1,2 +1,20 @@
 // This File is imported last, and will override other styles in the cascade
 // Add styles here to make changes without digging in too much
+
+.related-list {
+    list-style-type: none;
+}
+
+.related-date {
+    font-size: small;
+    font-family: "Courier New", Courier, monospace;
+}
+
+.dsq-widget {
+    font-size: 75%;
+    line-height: normal;
+}
+
+.dsq-widget-comment{
+    display: block;
+}

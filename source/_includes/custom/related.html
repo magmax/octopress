@@ -1,0 +1,23 @@
+<div class="related">
+	<div>
+		{% if post.lang == 'en' %}
+		<h2>Related Posts</h2>
+    {% else %}
+		<h2>Artículos relacionados</h2>
+    {% endif %}
+	</div>
+
+	<ul class="related-list">
+		{% for post in page.related limit:3 %}
+		<li>
+			{% if post.lang == 'en' %}
+			<img src="{{ site.url }}/images/gb.png"/>
+			{% else %}
+			<img src="{{ site.url }}/images/es.png"/>
+			{% endif %}
+			<span class="related-date">{{ post.date | date_to_string }}</span>
+			<span class="related-title"> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></span>
+		</li>
+		{% endfor %}
+	</ul>
+</div>
