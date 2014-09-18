@@ -93,6 +93,8 @@ delicious_count: 3
 # Disqus Comments
 disqus_short_name: 'magmax'
 disqus_show_comment_count: true
+disqus_count: 5
+disqus_show_avatars: true
 
 # Google Analytics
 google_analytics_tracking_id: 'UA-9308241-3'
