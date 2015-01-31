@@ -2,8 +2,7 @@ source "https://rubygems.org"
 
 group :development do
   gem 'rake', '~> 10.0'
-  #  gem 'jekyll', '~> 2.0'
-  gem 'jekyll', '~> 2.0'
+  gem 'jekyll', '~> 2.5'
   gem 'octopress-hooks', '~> 2.2'
   gem 'octopress-date-format', '~> 2.0'
   gem 'jekyll-sitemap'
@@ -15,7 +14,7 @@ group :development do
   gem 'rubypants', '~> 0.2.0'
   gem 'rb-fsevent', '~> 0.9'
   gem 'stringex', '~> 1.4.0'
-  gem 'liquid', '~> 2.5.5'
+#  gem 'liquid', '~> 2.5.5'
   gem 'directory_watcher', '1.4.1'
   gem 'RbST', '0.3.0'
   gem 'kramdown'
